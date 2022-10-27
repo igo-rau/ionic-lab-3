@@ -35,11 +35,9 @@ export class HomePage {
     const image = await Camera.getPhoto({quality:90, allowEditing: false, resultType: CameraResultType.Base64, source: CameraSource.Photos,});
 
     if (image) {
-      console.log(image);
       const loading = await this.loadingController.create();
       await loading.present();
-      const result = await this.avatarService.uploadImage(image); //returns null...
-
+      const result = await this.avatarService.uploadImage(image); //returned null... Solution: https://stackoverflow.com/a/70059933 
       loading.dismiss();
 
       if (!result) {{
