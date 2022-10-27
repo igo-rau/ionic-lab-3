@@ -1,3 +1,27 @@
+ion-avatar {
+  width: 128px;
+  height: 128px;
+}
+
+.preview {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.fallback {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: #bfbfbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+
+
 #container {
   text-align: center;
 
@@ -8,20 +32,20 @@
   transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+// #container strong {
+//   font-size: 20px;
+//   line-height: 26px;
+// }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+// #container p {
+//   font-size: 16px;
+//   line-height: 22px;
 
-  color: #8c8c8c;
+//   color: #8c8c8c;
 
-  margin: 0;
-}
+//   margin: 0;
+// }
 
-#container a {
-  text-decoration: none;
-}
+// #container a {
+//   text-decoration: none;
+// }
